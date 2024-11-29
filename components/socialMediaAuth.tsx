@@ -14,17 +14,17 @@ const SocialMediaAuth = () => {
         <p className='text-light shrink-0'>Or Continue With</p>
         <div className='h-[1px] w-full bg-gray-400'></div>
       </div>
-      <div className='flex space-x-8'>
-        <div className='w-14 h-14 center-content border rounded-lg shadow hover:bg-primary-light'>
+      <div className='flex space-x-6'>
+        <div className='w-14 h-14 center-content border rounded-lg shadow-lg hover:bg-primary-light'>
           <Image src={googleIcon} alt='Google icon' />
         </div>
-        <div className='w-14 h-14 center-content border rounded-lg shadow hover:bg-primary-light'>
+        <div className='w-14 h-14 center-content border rounded-lg shadow-lg hover:bg-primary-light'>
           <Image src={twitterIcon} alt='Twitter icon' />
         </div>
-        <div className='w-14 h-14 center-content border rounded-lg shadow hover:bg-primary-light'>
+        <div className='w-14 h-14 center-content border rounded-lg shadow-lg hover:bg-primary-light'>
           <Image src={facebookIcon} alt='Facebook icon' />
         </div>
-        <div className='w-14 h-14 center-content border rounded-lg shadow hover:bg-primary-light'>
+        <div className='w-14 h-14 center-content border rounded-lg shadow-lg hover:bg-primary-light'>
           <Image src={appleIcon} alt='Apple icon' />
         </div>
       </div>

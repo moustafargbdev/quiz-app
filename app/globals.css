@@ -9,3 +9,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.h2 {
+  @apply text-xl font-bold mb-3;
+}
+
+.hidden {
+  display: none;
+}

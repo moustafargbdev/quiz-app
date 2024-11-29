@@ -6,10 +6,11 @@ import Link from "next/link"
 const SignInPage = () => {
   return (
     <div>
+      <h2 className="h2">Sign in</h2>
       <Input type="email" placeholder="Enter Email" />
       <Input type="password" placeholder="Enter Password" />
       <div className="flex justify-end">
-        <Link href="/resetPassword" className="text-primary">Recover Password ?</Link>
+        <Link href="/resetPassword" className="text-primary mt-1">Recover Password ?</Link>
       </div>
 
       <Button className="mt-8 mb-3">Sign in</Button>

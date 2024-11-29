@@ -11,7 +11,7 @@ const Input = ({ errorMsg, className, type, ...props }: InputProps) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className='mb-6'>
+    <div className='py-3'>
       <div className="relative">
         <input type={type === 'password' ? showPassword ? "text" : "password" : type} className={`p-3 rounded-lg border shadow-md  w-full focus:outline-primary bg-primary-light/20 focus:shadow-none ${errorMsg ? "border-danger focus:outline-danger shadow-none" : ""} ${className}`} {...props} />
 
