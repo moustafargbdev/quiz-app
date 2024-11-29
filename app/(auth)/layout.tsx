@@ -8,7 +8,7 @@ import AuthNav from '@/components/authNav';
 const AuthLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div className='row'>
-      <div className="w-1/2 bg-primary-light h-screen hidden md:flex p-10 center-content">
+      <div className="w-1/2 bg-primary-light min-h-screen hidden md:flex p-10 center-content">
         <div className="max-w-md ">
           <h1 className='text-5xl font-bold'>Welcome to
             <span className='block text-6xl text-logo mt-2'>Elevate</span> </h1>
@@ -17,7 +17,7 @@ const AuthLayout = ({ children }: { children: ReactNode }) => {
           <Image src={authImage} alt='auth image' className='mt-20' />
         </div>
       </div>
-      <div className="md:w-1/2 w-full h-screen sm:p-10 p-5  center-content flex-col">
+      <div className="md:w-1/2 w-full min-h-screen sm:p-10 p-5  center-content flex-col">
         <AuthNav />
         <div className='flex-grow max-w-[410px] center-content flex-col w-full'>
           <div className="w-full">
