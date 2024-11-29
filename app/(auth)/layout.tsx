@@ -8,8 +8,8 @@ import AuthNav from '@/components/authNav';
 const AuthLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div className='row'>
-      <div className="w-1/2 bg-primary-light h-screen hidden md:block p-10 center-content">
-        <div className="max-w-md">
+      <div className="w-1/2 bg-primary-light h-screen hidden md:flex p-10 center-content">
+        <div className="max-w-md ">
           <h1 className='text-5xl font-bold'>Welcome to
             <span className='block text-6xl text-logo mt-2'>Elevate</span> </h1>
           <p className='text-lg mt-5 leading-8'>Quidem autem voluptatibus qui quaerat aspernatur architecto natus</p>
