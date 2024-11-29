@@ -14,6 +14,8 @@ export default {
         primary: "#4461F2",
         "primary-light": "#F0F4FC",
         light: "#6C737F",
+        logo: "#122D9C",
+        danger: "#F04438",
       },
     },
   },
