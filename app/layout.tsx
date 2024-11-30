@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { SessionProvider } from "next-auth/react";
+import { Toaster } from "react-hot-toast";
 
 const poppinsBlack = localFont({
   src: "./fonts/Poppins-Black.ttf",
@@ -44,7 +46,13 @@ export default function RootLayout({
           antialiased
         `}
       >
-        {children}
+        <SessionProvider>
+          {children}
+          <Toaster
+            position="top-right"
+            reverseOrder={false}
+          />
+        </SessionProvider>
       </body>
     </html>
   );

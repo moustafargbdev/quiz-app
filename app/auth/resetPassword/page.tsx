@@ -1,6 +1,4 @@
-import Button from '@/components/button'
-import Input from '@/components/input'
-import React from 'react'
+import { Button, Input } from "@/components"
 
 const ResetPasswordPage = () => {
   return (

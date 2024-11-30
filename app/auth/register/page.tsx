@@ -1,5 +1,4 @@
-import Button from '@/components/button'
-import Input from '@/components/input'
+import { Button, Input } from '@/components'
 import Link from 'next/link'
 import React from 'react'
 
@@ -14,7 +13,7 @@ const RegisterPage = () => {
       <Input type="password" placeholder="Confirm Password" />
       <div className="flex justify-center items-center space-x-1 mt-2">
         <p>Already have an account?</p>
-        <Link href="/resetPassword" className="text-primary">Login</Link>
+        <Link href="/auth/signin" className="text-primary">Login</Link>
       </div>
 
       <Button className="mt-8 mb-3">Create Account</Button>

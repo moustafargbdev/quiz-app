@@ -1,7 +1,10 @@
-import SignInPage from "./(auth)/signin/page";
+import Link from "next/link";
 
-export default function Home() {
+export default async function Home() {
+
   return (
-    <SignInPage />
+    <div>
+      <Link href="/auth/signin" className="text-3xl">sign in </Link>
+    </div>
   );
 }
