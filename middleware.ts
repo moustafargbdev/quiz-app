@@ -7,7 +7,10 @@ export default function middleware(request: NextRequest) {
 
   const currentURL = request.nextUrl.pathname;
 
-  if (!token) return NextResponse.rewrite(new URL("/auth/signin", request.url));
+  console.log(currentURL);
+
+  if (!token && !currentURL.startsWith("/auth"))
+    return NextResponse.rewrite(new URL("/auth/signin", request.url));
   else if (token && currentURL.startsWith("/auth"))
     return NextResponse.rewrite(new URL("/", request.url));
   return NextResponse.next();

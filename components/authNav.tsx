@@ -7,8 +7,8 @@ const AuthNav = () => {
       <div className="ms-auto">
         <ul className="row space-x-5 text-lg ">
           <li>English</li>
-          <li><Link href="/signin" className='text-primary font-bold'>Sign in</Link></li>
-          <li><Link href="/register" className='border rounded-lg px-6 py-2 text-primary shadow hover:bg-primary-light'>Register</Link></li>
+          <li><Link href="/auth/signin" className='text-primary font-bold'>Sign in</Link></li>
+          <li><Link href="/auth/register" className='border rounded-lg px-6 py-2 text-primary shadow hover:bg-primary-light'>Register</Link></li>
         </ul>
       </div>
     </div>
